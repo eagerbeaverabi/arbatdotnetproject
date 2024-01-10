@@ -6,4 +6,4 @@
    "**python manage.py runserver**" in **Linux** or **Mac** and "**py manage.py runserver**" in **Windows**.
 6. finally open your browser and search: [Register](http://localhost:8000/blogger/register/)
 
-now you can register and then login and see the features of this website :)
+**now you can register and then login and see the features of this website :)**
