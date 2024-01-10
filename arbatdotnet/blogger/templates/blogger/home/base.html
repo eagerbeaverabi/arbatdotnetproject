@@ -1,0 +1,33 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'blogger/home/base.css'%}">
+    <title>Arbat Bloggers</title>
+</head>
+<body>
+    <nav>
+        <div>
+            <div id="left">
+                <a id="profile" href="{% url 'blogger:profile' username%}">{{username}}</a>
+            </div>
+            <div id="center">
+                <a id="home" href="{% url 'blogger:home' username%}">My Articles</a>
+                <a id="workspace" href="{% url 'blogger:workspace' username%}">New Article</a>
+                <a id="articles" href="{% url 'blogger:articles' username%}">Articles</a>
+                <a id="bloggers" href="{% url 'blogger:bloggers' username%}">Bloggers</a>
+            </div>
+            <div id="right">
+                <a href="{% url 'blogger:logout'%}">Log out</a>
+            </div>
+        </div>
+    </nav>
+    {%block content%}
+    {%endblock%}
+</body>
+</html>

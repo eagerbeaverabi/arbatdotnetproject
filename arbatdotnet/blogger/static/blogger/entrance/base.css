@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+body {
+    background-image: linear-gradient(180deg, #8F94A8, #E4D7CF, #E4BE92);
+    background-repeat: no-repeat;
+    overflow: auto;
+    display: flex;
+    height: 100dvh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+div {
+    padding: 2rem;
+}
+button:hover {
+    background-color: #424dc6;
+}
+a:hover {
+    text-decoration: underline;
+}

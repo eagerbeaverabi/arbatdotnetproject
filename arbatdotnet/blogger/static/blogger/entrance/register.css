@@ -1,0 +1,51 @@
+section {
+    background-color: #313338;
+    display: inline-block;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    border-radius: .3rem;
+}
+h4{
+    color: #F2F3F5;
+    margin: .2rem 0 .75rem 5rem;
+}
+label{
+    display: block;
+    font-size: .5rem;
+    font-weight: 700;
+    color: #B5BAC1;
+}
+label::after{
+    content: "*";
+    color: #FF0000;
+}
+input{
+    margin: .26rem 0 1rem 0;
+    width: 18rem;
+    height: 1.6rem;
+    background-color: #1E1F22;
+    border: none;
+    border-radius: .175rem;
+    color: #D8DBDE;
+    padding-left: .53rem;
+    font-size: .66rem;
+    font-weight: 400;
+}
+button{
+    margin: .75rem 0 .46rem 0;
+    width: 18rem;
+    height: 1.86rem;
+    background-color: #4c56c2;
+    color: #FFFFFF;
+    border: none;
+    border-radius: .175rem;
+    font-size: .66rem;
+}
+a{
+    display: block;
+    font-size: .53rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #049DEB;
+}

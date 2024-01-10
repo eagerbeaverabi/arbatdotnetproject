@@ -1,0 +1,32 @@
+body{
+    background-color: #28292e;
+}
+nav a#workspace{
+    text-decoration: none;
+    color: #049DEB;
+}
+p{
+    color: #F2F3F5;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+label {
+    display: block;
+    font-size: .8rem;
+    font-weight: 700;
+    color: #B5BAC1;
+}
+textarea{
+    display: block;
+    margin: .3rem 0 1rem 0;
+}
+form{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+a button.pw{
+    text-decoration: none;
+    display: block;
+}

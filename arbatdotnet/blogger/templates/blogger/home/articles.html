@@ -1,0 +1,42 @@
+{%extends 'blogger/home/base.html'%}
+{%load static%}
+{%block content%}
+    <link rel="stylesheet" href="{%static 'blogger/home/articles.css'%}">
+    {%if articles and count != 0%}
+        <div class="articles">
+            {% for article in articles%}
+                {%if article.author.username != username %}
+                    <section class="article">
+                        <div>
+                            <div class="title">
+                                <h2>{{article.title}}</h2>
+                            </div>
+                            <div class="date">
+                                <p>created: {{article.created}}</p>
+                                <a href="{%url 'blogger:bloggers' username article.author.id%}"><p>{{article.author.username}}</p></a>
+                                {% if article.updated == article.created%}
+                                    <p>not edited yet</p>
+                                {%else%}
+                                    <p>updated: {{article.updated}}</p>
+                                {%endif%}
+                            </div>
+                            <hr class="inside">
+                            <div class="body">
+                                <p>{{article.body}}</p>
+                            </div>
+                            <!-- <div class="more">
+                                <p>Likes: {{article.likes}}</p>
+                                <p>Views: {{article.views}}</p>
+                            </div> -->
+                        </div>
+                    </section>
+                    <hr class="outside">
+                {%endif%}
+            {%endfor%}
+        </div>
+    {%else%}
+        <div class="no-article"> 
+            <h1>No Articles to show...</h1>
+        </div>
+    {%endif%}
+{%endblock%}

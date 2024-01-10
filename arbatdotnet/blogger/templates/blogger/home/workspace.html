@@ -1,0 +1,37 @@
+{%extends 'blogger/home/base.html'%}
+{%load static%}
+{%block content%}
+    <link rel="stylesheet" href="{%static 'blogger/home/workspace.css'%}">
+    <div class="container_pw">
+        <section class="pw">
+            <div>
+                {% if article.id%}
+                    <div id="header">
+                        <p>Edit Article</p>
+                    </div>
+                    <form action="{% url 'blogger:workspace' username article.id%}" method="post">
+                        {% csrf_token %}
+                        <label for="">Title:</label>
+                        <input class="pw" type="text" name="title" id="title" value="{{article.title}}">
+                        <label for="">Body:</label>
+                        <textarea class="pw" name="body" id="body" cols="30" rows="10" wrap="hard">{{article.body}}</textarea>
+                        <button class="pw" type="submit" value="Workspace">Edit</button>
+                    </form>
+                    <a href="{% url 'blogger:workspace' username article.id 1%}"><button class="pw">Delete</button></a>
+                {%else%}
+                    <div id="header">
+                        <p>New Article</p>
+                    </div>
+                    <form action="{% url 'blogger:workspace' username%}" method="post">
+                        {% csrf_token %}
+                        <label for="">Title:</label>
+                        <input class="pw" type="text" name="title" id="title">
+                        <label for="">Body:</label>
+                        <textarea class="pw" name="body" id="body" cols="30" rows="10" wrap="hard"></textarea>
+                        <button class="pw" type="submit" value="Workspace">Create</button>
+                    </form>
+                {%endif%}
+            </div>
+        </section>
+    </div>
+{%endblock%}

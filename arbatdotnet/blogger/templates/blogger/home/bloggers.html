@@ -1,0 +1,50 @@
+{%extends 'blogger/home/base.html'%}
+{%load static%}
+{%block content%}
+    <link rel="stylesheet" href="{%static 'blogger/home/bloggers.css'%}">
+    <div>
+        {%if author%}
+            <section class="blogger">
+                <div>
+                    <div class="fullname">
+                        <h2>{{blogger.fullname}}</h2>
+                    </div>
+                    <hr class="inside">
+                    {%if blogger.description%}
+                        <p>{{blogger.description}}</p>
+                    {%endif%}
+                    <div class="info">
+                        <div class="username">
+                            <p>{{blogger.username}}</p>
+                        </div>
+                        <p>Email: {{blogger.email}}</p>
+                        <p>Published Articles: {{number_of_articles}}</p>
+                    </div>
+                </div>
+            </section>
+        {%else%}
+            <div class="bloggers">
+                {% for blogger in bloggers%}
+                    <section class="blogger">
+                        <div>
+                            <div class="fullname">
+                                <h2>{{blogger.fullname}}</h2>
+                            </div>
+                            <hr class="inside">
+                            {%if blogger.description%}
+                                <div class="description">
+                                    <p>{{blogger.description}}</p>
+                                </div>
+                            {%else%}
+                                <p>No Description!</p>
+                            {%endif%}
+                            <div class="username">
+                                <a href="{%url 'blogger:bloggers' username blogger.id%}"><p>{{blogger.username}}</p></a>
+                            </div>
+                        </div>
+                    </section>
+                {%endfor%}
+            </div>
+        {%endif%}
+    </div>
+{%endblock%}

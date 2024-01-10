@@ -1,0 +1,40 @@
+{%extends 'blogger/home/base.html'%}
+{%load static%}
+{%block content%}
+    <link rel="stylesheet" href="{%static 'blogger/home/profile.css'%}">
+    <div class="container_pw">
+        <section class="pw">
+            <div>
+                <form action="{% url 'blogger:profile' username%}" method="post">
+                    {% csrf_token %}
+                    <div>
+                        <div id="header">
+                            <p>Profile</p>
+                        </div>
+                        <div>
+                            <label for="">Username:</label>
+                            <input class="pw" type="text" name="username" id="username" value="{{username}}">
+                        </div>
+                        <div>
+                            <label for="">Email:</label>
+                            <input class="pw" type="email" name="email" id="email" value="{{blogger.email}}">
+                        </div>
+                        <div>
+                            <label for="">Password:</label>
+                            <input class="pw" type="password" name="password" id="password" value="{{blogger.password}}">
+                        </div>
+                        <div>
+                            <label for="">Fullname:</label>
+                            <input class="pw" type="text" name="fullname" id="fullname" value="{{blogger.fullname}}">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="">Description:</label>
+                        <textarea class="pw" name="description" id="description" cols="30" rows="10" maxlength="1000">{{blogger.description}}</textarea>
+                    </div>
+                    <button class="pw" type="submit" value="Profile">Save</button>
+                </form>
+            </div>
+        </section>
+    </div>
+{%endblock%}

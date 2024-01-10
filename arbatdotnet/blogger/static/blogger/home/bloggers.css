@@ -1,0 +1,52 @@
+nav a#bloggers{
+    text-decoration: none;
+    color: #049DEB;
+}
+section.blogger {
+    margin: 12rem 5rem;
+    width: 86%;
+}
+section.article div.title{
+    display: flex;
+    justify-content: center;
+}
+section.article h2{
+    color: #313338;
+}
+p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #313338;
+    padding: .5rem 0 .5rem 0;
+    width: inherit;
+    text-align: justify;
+    word-spacing: .2rem;
+    white-space: pre-wrap;
+}
+
+.username p{
+    color: #0858a3;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+hr.inside{
+    height: .25rem;
+    background-color: #085DAD;
+    margin: .5rem 0 1rem 0;
+}
+h1{
+    color: #313338;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+a p:hover{
+    text-decoration: underline;
+    color: #049DEB;
+}
+.info{
+    margin-top: 1rem;
+}

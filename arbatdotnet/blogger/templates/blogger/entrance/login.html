@@ -1,0 +1,23 @@
+{%extends 'blogger/entrance/base.html'%}
+{%load static%}
+{%block content%}
+    <link rel="stylesheet" href="{%static 'blogger/entrance/login.css'%}">
+    <div class="container">
+        <section>
+            <div>
+                <h4>Welcome back!</h4>
+                <h6>We are so excited to see you again!</h6>
+                <form id="login" action="{% url 'blogger:login' %}" method="post">
+                    {% csrf_token %}
+                    {{form.as_p}}
+                    <input type="hidden" name="next" value="{{username}}">
+                </form>
+                <button form="login" type="submit" value="Submit" name="submit">Login</button>
+                <div id="register">
+                    <p>Need an account?</p>
+                    <a href="{% url 'blogger:register' %}">Register</a>
+                </div>
+            </div>
+        </section>
+    </div>
+{%endblock%}

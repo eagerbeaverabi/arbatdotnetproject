@@ -1,0 +1,96 @@
+nav a#articles{
+    text-decoration: none;
+    color: #049DEB;
+}
+section.article {
+    margin: 8rem 5rem;
+    width: 86%;
+}
+section.article div.date{
+    display: flex;
+    justify-content: space-between;
+}
+
+section.article div.title{
+    display: flex;
+    justify-content: center;
+}
+
+section.article h2{
+    color: #313338;
+}
+
+section.article p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #313338;
+    padding: 2.5rem 0 1rem 0;
+    width: inherit;
+    text-align: justify;
+    word-spacing: .2rem;
+    white-space: pre-wrap;
+}
+
+section.article div.date p {
+    font-size: 1rem;
+    color: #085DAD;
+    font-weight: 900;
+    margin-top: -.5rem;
+}
+
+section.article div.more {
+    display: flex;
+    gap: 3rem;
+}
+
+section.article div.more p{
+    color: #0858a3;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+section.article button {
+    margin-top: 2rem;
+    background-color: #085DAD;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: .2rem;
+    width: 4rem;
+    height: 2rem;
+}
+
+section.article button:hover {
+    background-color: #106bbf;
+}
+
+hr.inside{
+    height: .25rem;
+    background-color: #085DAD;
+    margin-bottom: 1rem;
+}
+
+hr.outside{
+    height: .3rem;
+    width: 100%;
+    background-color: #000000;
+    margin-top: -1rem;
+}
+div.no-article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+h1{
+    color: #313338;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+a p:hover{
+    text-decoration: underline;
+    color: #049DEB;
+}

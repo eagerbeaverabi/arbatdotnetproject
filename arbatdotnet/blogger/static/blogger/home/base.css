@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    overflow: auto;
+    height: 100dvh;
+}
+html {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+nav {
+    background-color: #313338;
+    width: 100%;
+    height: fit-content;
+    position: fixed;
+    top: 0;
+}
+
+nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .66rem 1.66rem;
+}
+
+nav #left{
+    position: fixed;
+    left: 0;
+}
+
+nav div #center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+nav #right{
+    position: fixed;
+    right: 0;
+}
+
+nav a {
+    font-weight: 700;
+    text-decoration: none;
+    color: #E8E8E8;
+}
+
+nav #center a{
+    font-size: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #049DEB;
+}
+input.pw{
+    margin: .4rem 0 1rem 0;
+    width: 27rem;
+    height: 2.5rem;
+    background-color: #1E1F22;
+    border: none;
+    border-radius: .175rem;
+    color: #D8DBDE;
+    padding-left: 1.2rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+div#header{
+    background-color: #4c56c2;
+    width: 27rem;
+    height: 3.5rem;
+    border-radius: .15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.container_pw{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.pw{
+    height: 100%;
+    border-radius: .3rem;
+    margin-top: 4.5rem;
+    padding: 3rem;
+}
+textarea.pw{
+    display: block;
+    border: .15rem solid #4c56c2;
+    border-radius: .2rem;
+    margin-top: .4rem;
+    padding: .5rem;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    min-width: 27rem;
+    min-height: 20rem;
+    resize: none;
+    font-family: inherit;
+    font-size: 1rem;
+}
+button.pw{
+    margin: .1rem 0 .6rem 0;
+    width: 27rem;
+    height: 2.8rem;
+    background-color: #4c56c2;
+    color: #FFFFFF;
+    border: none;
+    border-radius: .175rem;
+    font-size: .8rem;
+}
