@@ -4,5 +4,5 @@
 3. open the project with vscode.
 4. in vscode terminal go to inside the folder arbatdotnet and type the comman: "**python3 manage.py runserver**" or
    "**python manage.py runserver**" in **Linux** or **Mac** and "**py manage.py runserver**" in **Windows**.
-6. finally open your browser and search: [Register](http://localhost:8000/blogger/register/)
+6. >finally open your browser and search: [Register](http://localhost:8000/blogger/register/)
 >now you can register and then login and see the features of this website :)
