@@ -1,3 +1,4 @@
+## Here's how you can try this project:
 1. download the arbatdotnetproject repository.
 2. install django on your device: "**pip install Django**".
 3. open the project with vscode.
