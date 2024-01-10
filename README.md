@@ -1,5 +1,5 @@
 ## Here's how you can try this project:
-1. download the arbatdotnetproject repository.
+>1. download the arbatdotnetproject repository.
 2. install django on your device: "**pip install Django**".
 3. open the project with vscode.
 4. in vscode terminal go to inside the folder arbatdotnet and type the comman: "**python3 manage.py runserver**" or "**python manage.py runserver**" in **Linux** or **Mac** and "**py manage.py runserver**" in **Windows**.
